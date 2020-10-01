@@ -40,7 +40,7 @@ void *dekker(void *vargp) {
 		// Also gives more time that could exceed the quanta to switch the core
 		// to a different thread (if only one core exists)
 		// we could also sleep here.... but meh
-		for (int i = 0; i < 10000; i++);
+		for (int j = 0; j < 10000; j++);
 		inside[num] = 0;
 		turn = other;
 		want_to_enter[num] = 0;
